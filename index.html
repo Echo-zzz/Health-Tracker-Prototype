@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<script>
+					var oDf = 0;
+					var oF = 0;
+					 function openForm(){
+						oF = true;
+						document.getElementById("popupSleep").style.display = "block";
+							if(oDf == true){
+								closeDietForm();
+							}
+							
+							
+					}
+					function closeForm(){
+						oF = false;
+						document.getElementById("popupSleep").style.display = "none";
+						
+					}
+					function openDietForm(){
+						
+						document.getElementById("popupDiet").style.display = "block";
+						oDf = true;
+							if(oF == true){
+								closeForm();
+							}
+							
+					}
+					function closeDietForm(){
+					    oDf = false;
+						document.getElementById("popupDiet").style.display = "none";
+						
+					}
+					
+					
+					
+					
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+		
+	</head>
+	<body>
+		<div class= "maincontainer">
+			<div class = "innercontainer">
+				<div class = "arrow">
+					<input type = "button" value = "↑" class = "button">
+				</div>
+				<div class = "heading">
+					<h1 class = "h1" > EXERCISE </h1>
+				</div>	
+			</div>
+		</div>
+		<div class = "maincontainer2">
+			<div class = "innercontainer2">
+				<div class = "diet">
+					<button class = "button1"><span class = "text" onclick = "openDietForm()">DIET</span></button>
+				</div>
+				<div class ="main">
+					<div class = "data" id = "br1">
+						<div class = "block2">
+							<img src = "image.jpg" width = "100" height = "100"/>
+						</div>
+						<div class = "block2connected">
+							<h2  class = "heading2">You exercised for 40 minutes today!</h2>
+						</div>
+						<div class = "graphs">
+							<div class = "piecharts">
+							</div>
+							<div class = "exercisepage">
+							</div>
+						</div>
+						<div class = "statement">
+							<span class = "head">You have 500 calories to go.</span>
+						</div>
+						<div class ="detail">
+							<button class ="moreDetail">More Details</button>
+						</div>
+					</div>
+				</div>
+				<div class = "sleep">
+					<button class = "button1" onclick = "openForm()"><span class = "text">SLEEP</span></button>
+				</div>
+				<div class = "sleepPopup">
+					<div class = "formPopup" id = "popupSleep">
+					<form class = "formContainer">
+					 <h2 class = "formHeader"> SLEEP</h2>
+					 </form>
+					 
+					</div>
+				</div>
+				<div class = "DietPopup">
+					<div class = "formPopup" id = "popupDiet">
+					<form class = "formContainer">
+					 <h2> DIET</h2>
+					 </form>
+					 
+					</div>
+				</div>
+				
+	
+	</body>
+</html>
