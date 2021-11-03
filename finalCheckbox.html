@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<style>
+/* The container */
+.container {
+  display: block;/*?*/
+  position: relative;
+  padding-left: 60px;/*the distance between text and checkbox*/
+  margin-bottom: 60px;/*distance between lines*/
+  cursor: pointer;/*?*/
+  font-size: 45px;/*the size of the text*/
+}
+
+/* Hide the browser's default checkbox, default check box won't show again*/
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  height: 50px;/*checkbox's height*/
+  width: 50px;/*checkbox's width*/
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: green;/*the background color of check box after clicked*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 15px;/*distance from left edge*/
+  top: 5px;
+  width: 15px;/*check size*/
+  height: 30px;/*check size, should be double of width*/
+  border: solid white;
+  border-width: 0 5px 5px 0;/*check size*/
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+h1{
+text-align:center;
+color:red;
+font-size:120px;
+}
+div{
+text-align:center;
+color:black;
+font-size:50px;
+}
+</style>
+<body>
+<h1>Excersice List</h1>
+<div><label class="container">Push up---4*20: 
+<input type="checkbox" id="first" onclick="myFunction()">
+<span class ="checkmark"></span></label>
+<label class="container">Climbing---40min:
+<input type="checkbox" id="second" onclick="myFunction()">
+<span class ="checkmark"></span></label>
+<label class="container">Running---30min: 
+<input type="checkbox" id="third" onclick="myFunction()">
+<span class ="checkmark"></span></label>
+</body>
+<div><p id="congratulation" style="display:none">You Have Done All The Work!</p></div>
+
+<script>
+function myFunction() {
+  var checkBox1 = document.getElementById("first");
+  var checkBox2 = document.getElementById("second");
+  var checkBox3 = document.getElementById("third");
+  var text = document.getElementById("congratulation");
+  if (checkBox1.checked == true && checkBox2.checked == true && checkBox3.checked ==true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+</html>
