@@ -1,0 +1,168 @@
+body{
+	margin:0;
+	margin:auto;
+}
+.maincontainer{
+	height:750px;
+	width:100%;
+	background-color:white;
+}
+.innercontainer{
+	height:750px;
+	width:1000px;
+	background-color:white;
+	margin:auto;
+	border: 2px solid black;
+}
+.setGoalsHeading{
+	height:150px;
+	width:1000px;
+	background-color:white;	
+	margin-top:-32.5px;
+}
+.goalsIcon{
+	height:200px;
+	width:1000px;
+	background-color:pink;
+}
+.goalsIcon2{
+	height:200px;
+	width:1000px;
+	background-color:brown;
+}
+.statement{
+	height:200px;
+	width:1000px;
+	background-color:white;
+}
+.heading{
+	font-weight:400;
+	font-size:50px;
+	font-family:arial;
+	margin-left: 260px;
+	padding-top:40px;
+}
+.close{
+	height:50px;
+	width:50px;
+	border-radius: 18px;
+	float:right;
+	background-color:red;
+	color:white;
+	font-size:20px;
+}
+.icon1{
+	height:200px;
+	width:500px;
+	float:left;
+	background-color:white;
+	float:left;
+}
+.icon2{
+	height:200px;
+	width:500px;
+	float:left;
+	background-color:white;
+	float:left;
+}
+.heading2{
+	margin-top:150px;
+	text-align:center;
+	
+}
+.pic{
+	height:150px;
+	width:500px;
+	background-color:white;
+}
+.subHeading{
+	height:150px;
+	width:500px;
+	background-color:white;
+}
+.sub{
+	text-align:center;
+	font-weight:400;
+	font-family:arial;
+}
+.categoryImage{
+	height:100px;
+	width:1000px;
+	background-color:yellow;
+}
+.plans{
+	height:650px;
+	width:1000px;
+	background-color:green;
+}
+.imageBox{
+	height:150px;
+	width:600px;
+	background-color:white;
+	float:left;
+}
+.exit{
+	height:150px;
+	width:400px;
+	background-color:white;
+	float:left;
+}
+.planA{
+	height:600px;
+	width:500px;
+	float:left;
+	background-color:white;
+}
+.planB{
+	height:600px;
+	width:500px;
+	float:left;
+	background-color:white;
+}
+.plansHeading{
+		font-size:30px;
+		font-family:arial;
+		font-weight:400;
+		text-align:center;
+}
+.Planheading{
+	height:50px;
+	width:500px;
+	background-color:white;
+	margin-top:-50px;
+}
+.planDescription{
+	height:500px;
+	width:400px;
+	background-color:indigo;
+	margin:auto;
+	border:2px solid black;
+	border-radius:5px;
+}
+.description{
+	height:450px;
+	width:400px;
+	background-color:red;
+	margin-top:-30px;
+}
+.apply{
+	height:50px;
+	width:400px;
+	background-color:white;
+}
+.para{
+	font-size:30px;
+	font-family:arial;
+	font-weight:400;
+	text-align:center;
+}
+.applybutton{
+	height:40px;
+	width:190px;
+	margin-left:105px;
+	margin-top:4px;
+	border-radius:6px;
+	background-color:purple;
+	color:white;
+	font-size:20px;
+}

@@ -1,0 +1,123 @@
+body{
+	margin:0;
+	margin:auto;
+}
+.maincontainer{
+	height:750px;
+	width:100%;
+	background-color:white;
+}
+.innercontainer{
+	height:750px;
+	width:1000px;
+	background-color:white;
+	margin:auto;
+	border: 2px solid black;
+}
+.instructors{
+	height:200px;
+	width:1000px;
+	background-color:white;
+	
+}
+.heading{
+	height:200px;
+	width:800px;
+	background-color:white;
+	float:left;
+}
+.close{
+	height:200px;
+	width:200px;
+	background-color:white;
+	float:left;
+}
+.header{
+	font-family:arial;
+	font-weight:400;
+	text-align:center;
+	margin-left:140px;
+	padding-top:30px;
+	font-size:50px;
+}
+.closeButton{
+	float:right;
+	height:50px;
+	width:50px;
+	background-color:white;
+	font-weight:400;
+	font-size:30px;
+	border-radius:10px;
+	background-color:red;
+	margin-top:10px;
+	color:white;
+}
+.differentPeople{
+	height:550px;
+	width:1000px;
+	background-color:white;
+}
+.type1{
+	height:275px;
+	width:1000px;
+	background-color:white;
+}
+.people{
+	height:275px;
+	width:333.33px;
+	background-color:white;
+	float:left;
+}
+.photo{
+	height:225px;
+	width:331.5px;
+	background-color:orange;
+}
+.name{
+	height:50px;
+	width:331.5px;
+	background-color:yellow;
+	text-align:center;
+	font-size:25px;
+	font-family:arial;
+	font-weight:400;
+}
+.ins{
+	height:100px;
+	width:1000px;
+	background-color:white;
+}
+.in{
+	height:100px;
+	width:900px;
+	float:left;
+	background-color:white;
+}
+.exit{
+	height:100px;
+	width:100px;
+	float:left;
+	background-color:white;
+}
+.hea{
+	text-align:center;
+	font-size:40px;
+	font-family:arial;
+}
+.photoContainer{
+	height:250px;
+	width:1000px;
+	background-color:white;
+}
+.description{
+	height: 300px;
+	width:1000px;
+	background-color:white;	
+}
+.para{
+	
+	font-size:25px;
+	margin-left:350px;
+	font-family:arial;
+	font-weight:400;
+}

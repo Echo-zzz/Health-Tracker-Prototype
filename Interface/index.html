@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	.formPopup {
+		   height:100%;
+		   width:250px;
+           position:fixed;
+		   display:none;
+		   margin-left:-423px;
+		   margin-top:-73px;
+		   background-color:white;
+		
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+	  .checkPage{
+		height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   background-color:white;
+		   display:none;
+		   border: 2px solid black;
+		   border-radius:5px;
+		
+			left: 45%;
+			top: 5%;
+	  }
+	  .hiddenDetails{
+		height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   background-color:white;
+		   border: 2px solid black;
+		   border-radius:5px;
+			display:none;
+			left: 45%;
+			top: 5%;
+	  }
+	  .state{
+		display:none;
+	  }
+	  .hiddenCalories{
+		height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   background-color:white;
+		   border: 2px solid black;
+		   border-radius:5px;
+			left: 45%;
+			top: 5%;
+			display:none;
+	  }
+		</style>
+		<script>
+	  function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+	  function openList(){
+		document.getElementById("check").style.display = "block";
+	  }
+	  function closeList() {
+        document.getElementById("check").style.display = "none";
+      }
+	  function showComplement(){
+		var cb1 =  document.getElementById("first");
+		var cb2 =  document.getElementById("second");
+		var cb3 =  document.getElementById("third");
+		var cb4 =  document.getElementById("fourth");
+		var cb5 =  document.getElementById("fifth");
+		if(cb1.checked == true && cb2.checked == true && cb3.checked == true && cb4.checked == true && cb5.checked == true){
+			document.getElementById("state1").style.display = "block";
+		}
+	  }
+	  function openDetails(){
+		document.getElementById("det").style.display = "block";
+	  }
+	   function closeDetails() {
+        document.getElementById("det").style.display = "none";
+      }
+	  function openCalories(){
+		document.getElementById("cal").style.display = "block";
+	  }
+	   function closeCalories() {
+        document.getElementById("cal").style.display = "none";
+      }
+	   function openMinutes(){
+		document.getElementById("min").style.display = "block";
+	  }
+	   function closeMinutes() {
+        document.getElementById("min").style.display = "none";
+      }
+	   function openSteps(){
+		document.getElementById("steps").style.display = "block";
+	  }
+	   function closeSteps() {
+        document.getElementById("steps").style.display = "none";
+      }
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+		
+	</head>
+	<body>
+		<div class= "maincontainer">
+			<div class = "innercontainer">
+				<div class = "arrow">
+					<input type = "button" value = "⇮" class = "button" onclick="openForm()">
+				</div>
+				<div class = "heading">
+					<h1 class = "h1" > EXERCISE </h1>
+				</div>	
+			</div>
+		</div>
+		<div class = "maincontainer2">
+			<div class = "innercontainer2">
+				<div class = "diet">
+					<button class = "button1"><span class = "text"><a style = "text-decoration:none;color:black" href = "index3.html">DIET</a></span></button>
+				</div>
+				<div class ="main">
+					<div class = "data" id = "br1">
+						<div class = "block2">
+							<img src = "image.jpg" width = "100" height = "100"/>
+						</div>
+						<div class = "block2connected">
+							<h2  class = "heading2">You exercised for 40 minutes today!</h2>
+						</div>
+						<div class = "graphs">
+						  
+							<div class = "piecharts">
+							   <div class ="chart1" onclick = "openMinutes()">
+							     <div class = "chartImage">
+							        <img src = "chart1.png" height= "100" width = "100"/>
+								 </div>
+								 <div class = "chartHeading">
+								    <h3 class = "chartStatement"> 80 minutes to go.</h3>
+								 </div>
+							   </div>
+							   <div class = "chart2" onclick = "openCalories()">
+							    <div class = "chartImage">
+							        <img src = "chart2.png" height= "100" width = "100"/>
+								 </div>
+								 <div class = "chartHeading">
+								    <h3 class = "chartStatement"> 400 calories to go.</h3>
+								 </div>
+							   </div>
+							  
+							</div>
+							<div class = "exercisepage">
+							      <img src = "list.png" height = "200" width = "200" hspace = "75" onclick = "openList()"class = "exerciseImage"/>
+							</div>
+						</div>
+						<div class = "statement">
+							
+						</div>
+						<div class ="detail">
+							<button class ="moreDetail" onclick = "openDetails()">More Details</button>
+						</div>
+					</div>
+				</div>
+				<div class = "sleep">
+					<button class = "button1"><span class = "text"><a style = "text-decoration:none;color:black"href = "index2.html">SLEEP</a></span></button>
+				</div>
+				 <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <div action="/action_page.php" class="formContainer">
+			<div class = "prof">
+				<div class = "close">
+				 <input type = "button" value = "X"class = "closeBut" onclick = "closeForm()"/>
+				</div>
+				<div class = "profilePic">
+					<img src = "createProfile.png" height = "130" width = "150" hspace = "45">
+				</div>
+			</div>
+			<div class = "subMenu">
+				<a href = "profilePage.html" style = "text-decoration:null;color:black"><input type = "button" value = "Profile"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "setGoals.html" style = "text-decoration:null;color:black"><input type = "button" value = "Goals"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "settings.html"><input type = "button" value = "Setting"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "instructors.html"><input type = "button" value = "Find Instructors"class = "subMenuHeading"/></a>
+			</div>
+        </div>
+      </div>
+    </div>
+	<div class = "checkPage" id = "check">
+		<div class = "listExercise">
+			
+			<div class = "listPage">
+				<h1 class = "listDesign">EXERCISE LIST</h1>
+		     </div>
+			 <div class = "Xbutton">
+				<input type = "button" value = "X" class= "buttonEdit" onclick = "closeList()"/>
+			</div>
+		</div>
+	
+	<div class = "checklist">
+		<div class = "wholeWork">
+			
+		<div class = "doWork">
+			<h2 class = "doWorkHeading">Push Up (4X20)</h2>
+		</div>
+		<div class = "doneWork">
+			<input type = "checkbox" class = "box" id = "first" onclick = "showComplement()"/>
+		</div>
+		</div>
+		<div class = "wholeWork">
+		<div class = "doWork1">
+			<h2 class = "doWorkHeading">Climbing (40 Minutes)</h2>
+		</div>
+		<div class = "doneWork1">
+			<input type = "checkbox" class = "box" id = "second" onclick = "showComplement()"/>
+		</div>
+		</div>
+		<div class = "wholeWork">
+		<div class = "doWork">
+			<h2 class = "doWorkHeading">Riding Bicycle (20 Minutes)</h2>
+		</div>
+		<div class = "doneWork">
+			<input type = "checkbox" class = "box" id = "third" onclick = "showComplement()"/>
+		</div>
+		</div>
+		<div class = "wholeWork">
+		<div class = "doWork1">
+			<h2 class = "doWorkHeading">Pull Up (2X10)</h2>
+		</div>
+		<div class = "doneWork1">
+			<input type = "checkbox" id = "fourth"class = "box" onclick = "showComplement()"/>
+		</div>
+		</div>
+		<div class = "wholeWork">
+		<div class = "doWork">
+			<h2 class = "doWorkHeading">Walking (30 Minutes)</h2>
+		</div>
+		<div class = "doneWork">
+			<input type = "checkbox" id = "fifth"class = "box" onclick = "showComplement()"/>
+		</div>
+		</div>
+		</div>
+	
+		<div class = "state" id = "state1">
+				<h2 class = "hiddenComplements">
+					YOU DID IT !
+				<h2>
+		</div>
+	</div>
+		<div class = "hiddenDetails" id = "det">
+			<div class = "moreDetails">
+				<div class = "detailContainer">
+					<h2 class = "moreDetailsHeading">
+						MORE DETAILS
+					</h2>
+				</div>
+				<div class = "closeContainer">
+					<input type = "button" value = "X" class= "buttonClose" onclick = "closeDetails()"/>
+				</div>
+			</div>
+			<div class = "detailChart1" onclick = "openMinutes()">
+				<div class = "detail1">
+					<img src = "40.png" height = "200" width = "250">
+				</div>
+				<div class = "chart3">
+					<h2 class = "detailsAbc">minutes</h2>
+				</div>
+				</div>
+				<div class = "detailChart1" onclick = "openCalories()">
+				<div class = "detail1">
+					<img src = "900.png" height = "200" width = "250">
+				</div>
+				<div class = "chart3">
+					<h2 class = "detailsAbc">calories burnt</h2>
+				</div>
+				</div>
+				<div class = "detailChart1" onclick = "openSteps()">
+				<div class = "detail1">
+						<img src = "1500.png" height = "200" width = "250">
+				</div>
+				<div class = "chart3">
+					<h2 class = "detailsAbc">steps</h2>
+				</div>
+				</div>
+		</div>
+		  <div class = "hiddenCalories" id = "cal">
+			<div class = "caloriesHeading">
+				<div class = "caloriesHeader">
+					<h2 class = "caloriesBurnt"> Calories Burnt </h2>
+				</div>
+				<div class = "caloriesButton">
+					<input type = "button" value = "X" class = "buttonEdit" onclick = "closeCalories()">
+				</div>
+			</div>
+			
+			<div class = "caloriesDescription">
+				<div class  = "caloriesChart">
+					<img src = "900.png" height = "200" width = "250">
+				</div>
+				<div class = "caloriesStatement">
+					<h2 class = "caloriesSpan"> You have consumed 900 calories.</h2>
+				</div>
+			</div>
+			<div class = "caloriesGraph">
+				<img src = "caloriesBurnt.png" height = "200" width = "500">
+			</div>
+			<div class = "caloriesPieChart">
+				<img src = "caloriesChart.png" height = "200" width = "300" hspace = "100">
+			</div>
+		  </div>
+		  <div class = "hiddenCalories" id = "min">
+			<div class = "caloriesHeading">
+				<div class = "caloriesHeader">
+					<h2 class = "caloriesBurnt"> Minutes Exercised </h2>
+				</div>
+				<div class = "caloriesButton">
+					<input type = "button" value = "X" class = "buttonEdit" onclick = "closeMinutes()">
+				</div>
+			</div>
+			
+			<div class = "caloriesDescription">
+				<div class  = "caloriesChart">
+					<img src = "40.png" height = "200" width = "250">
+				</div>
+				<div class = "caloriesStatement">
+					<h2 class = "caloriesSpan"> You have exercised for 40 minutes.</h2>
+				</div>
+			</div>
+			<div class = "caloriesGraph">
+				<img src = "minutesExercised.png" height = "200" width = "500">
+			</div>
+			<div class = "caloriesPieChart">
+				<img src = "minutesChart.png" height = "200" width = "300" hspace = "100">
+			</div>
+		  </div>
+		  <div class = "hiddenCalories" id = "steps">
+			<div class = "caloriesHeading">
+				<div class = "caloriesHeader">
+					<h2 class = "caloriesBurnt"> Number of Steps </h2>
+				</div>
+				<div class = "caloriesButton">
+					<input type = "button" value = "X" class = "buttonEdit" onclick = "closeSteps()">
+				</div>
+			</div>
+			
+			<div class = "caloriesDescription">
+				<div class  = "caloriesChart">
+					<img src = "1500.png" height = "200" width = "250">
+				</div>
+				<div class = "caloriesStatement">
+					<h2 class = "caloriesSpan"> You walked 1500 steps.</h2>
+				</div>
+			</div>
+			<div class = "caloriesGraph">
+				<img src = "steps.png" height = "200" width = "500">
+			</div>
+			<div class = "caloriesPieChart">
+				<img src = "stepsChart.png" height = "180" width = "300" hspace = "100">
+			</div>
+		  </div>
+	
+			
+				
+	
+	</body>
+</html>

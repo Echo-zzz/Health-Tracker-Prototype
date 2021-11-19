@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+	.formPopup {
+		   height:100%;
+		   width:250px;
+           position:fixed;
+		   display:none;
+		   margin-left:-423px;
+		   margin-top:-73px;
+		   background-color:white;
+		
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+	  .hiddenFoodDescription{
+		  height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   display:none;
+		   background-color:white;
+		   border: 2px solid black;
+		   border-radius:5px;
+			left: 45%;
+			top: 5%;
+	  }
+	 
+	  
+		</style>
+		<script>
+	  function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+	  function openBreakfast() {
+        document.getElementById("break").style.display = "block";
+      }
+      function closeBreakfast() {
+        document.getElementById("break").style.display = "none";
+      }
+	  function openLunch() {
+        document.getElementById("lunch").style.display = "block";
+      }
+      function closeLunch() {
+        document.getElementById("lunch").style.display = "none";
+      }
+	  function openDinner() {
+        document.getElementById("dinner").style.display = "block";
+      }
+      function closeDinner() {
+        document.getElementById("dinner").style.display = "none";
+      }
+	   function openSnacks() {
+        document.getElementById("snacks").style.display = "block";
+      }
+      function closeSnacks() {
+        document.getElementById("snacks").style.display = "none";
+      }
+	    function openOthers() {
+        document.getElementById("others").style.display = "block";
+      }
+      function closeOthers() {
+        document.getElementById("others").style.display = "none";
+      }
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style3.css"/>
+		
+	</head>
+	<body>
+		<div class= "maincontainer">
+			<div class = "innercontainer">
+				<div class = "arrow">
+					<input type = "button" value = "⇮" class = "button" onclick = "openForm()"/>
+				</div>
+				<div class = "heading">
+					<h1 class = "h1" > DIET </h1>
+				</div>	
+			</div>
+		</div>
+		<div class = "maincontainer2">
+			<div class = "innercontainer2">
+				<div class = "diet">
+					<button class = "button1" ><span class = "text" onclick = "openDietForm()"><a style = "text-decoration:none;color:black"href = "index2.html">SLEEP</a></span></button>
+				</div>
+				<div class ="main">
+					<div class = "data" id = "br1">
+						<div class ="line">
+							<div class = "line1">
+							 <h2 class = "today">Today</h2>
+							</div>
+							<div class = "line2">
+								<h2 class = "cal">500/2000 Calories</h2>
+							</div>
+						</div>
+						<div class = "meals">
+							<div class = "personPhoto">
+							   <img src = "personImage.png" height = "300" width = "250" hspace = "50">
+							</div>
+							<div class = "mealDetails">
+									<div class = "detailMeal">
+										<div class = "mealImage">
+											<img src = "breakfast.png" height = "70" width = "100"/>
+										</div>
+										<div class = "mealLine">
+											<h2 class = "mealHead">BreakFast</h2>
+										</div>
+										<div class = "mealButton">
+											<input class = "plus" type = "button" value = "+" onclick = "openBreakfast()"/>
+										</div>
+									</div>
+									<div class = "detailMeal">
+										<div class = "mealImage">
+											<img src = "lunch.jpg" height = "70" width = "100"/>
+										</div>
+										<div class = "mealLine">
+										 <h2 class = "mealHead">Lunch</h2>
+										</div>
+										<div class = "mealButton">
+											<input class = "plus" type = "button" value = "+" onclick = "openLunch()"/>
+										</div>
+									</div>
+									<div class = "detailMeal">
+										<div class = "mealImage">
+											<img src = "dinner.png" height = "70" width = "100"/>
+										</div>
+										<div class = "mealLine">
+											<h2 class = "mealHead">Dinner</h2>
+										</div>
+										<div class = "mealButton">
+										<input class = "plus" type = "button" value = "+" onclick = "openDinner()"/>
+										</div>
+									</div>
+									<div class = "detailMeal">
+										<div class = "mealImage">
+											<img src = "snack.png" height = "70" width = "100"/>
+										</div>
+										<div class = "mealLine">
+											<h2 class = "mealHead">Snacks</h2>
+										</div>
+										<div class = "mealButton">
+										<input class = "plus" type = "button" value = "+" onclick = "openSnacks()"/>
+										</div>
+									</div>
+									<div class = "detailMeal">
+										<div class = "mealImage">
+											<img src = "others.png" height = "70" width = "100"/>
+										</div>
+										<div class = "mealLine">
+											<h2 class = "mealHead">Others</h2>
+										</div>
+										<div class = "mealButton">
+										<input class = "plus"type = "button" value = "+" onclick = "openOthers()"/>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class = "sleep">
+					<button class = "button1" onclick = "openForm()"><a style = "text-decoration:none;color:black"href = "index.html"><span class = "text">EXERCISE</a></span></button>
+				</div>
+			</div>
+		</div>
+	<div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <div action="/action_page.php" class="formContainer">
+			<div class = "prof">
+				<div class = "close">
+				 <input type = "button" value = "X"class = "closeBut" onclick = "closeForm()"/>
+				</div>
+				<div class = "profilePic">
+					<img src = "createProfile.png" height = "130" width = "150" hspace = "45">
+				</div>
+			</div>
+			<div class = "subMenu">
+				<a href = "profilePage3.html" style = "text-decoration:null;color:black"><input type = "button" value = "Profile"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "setGoals3.html"><input type = "button" value = "Goals"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "setting3.html"><input type = "button" value = "Setting"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "instructors3.html"><input type = "button" value = "Find Instructors"class = "subMenuHeading"/></a>
+			</div>
+        </div>
+      </div>
+    </div>
+	<div class = "hiddenFoodDescription" id = "break">
+		<div class = "breakfastContainer">
+			<div class = "breakImage">
+				<img src = "breakfast.png" height = "100" width = "150" />
+			</div>
+			<div class = "breakfastHeading">
+				<h2 class = "breakfastHeader">Breakfast</h2>
+			</div>
+			<div class = "breakfastClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeBreakfast()"/>
+			</div>
+		</div>
+		<div class = "eatContainer">
+			<h2 class  = "eatContainerHeader">What you ate:</h2>
+		</div>
+		<div class = "textFieldEat">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "drinkContainer">
+			<h2 class  = "eatContainerHeader">What you drank:</h2>
+		</div>
+		<div class = "textFieldDrink">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "hiddenButtonContainer">
+			<div class = "hiddenSubmitButton">
+				<input type = "button" value = "Submit Data" class = "submitData"/>
+			</div>
+			<div class = "hiddenAnalysisButton">
+				<input type = "button" value = "See Analysis" class = "Analysis"/>
+			</div>
+		</div>
+		</div>
+		
+		<div class = "hiddenFoodDescription" id = "lunch">
+		<div class = "breakfastContainer">
+			<div class = "breakImage">
+				<img src = "lunch.jpg" height = "100" width = "150" />
+			</div>
+			<div class = "breakfastHeading">
+				<h2 class = "breakfastHeader">Lunch</h2>
+			</div>
+			<div class = "breakfastClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeLunch()"/>
+			</div>
+		</div>
+		<div class = "eatContainer">
+			<h2 class  = "eatContainerHeader">What you ate:</h2>
+		</div>
+		<div class = "textFieldEat">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "drinkContainer">
+			<h2 class  = "eatContainerHeader">What you drank:</h2>
+		</div>
+		<div class = "textFieldDrink">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "hiddenButtonContainer">
+			<div class = "hiddenSubmitButton">
+				<input type = "button" value = "Submit Data" class = "submitData"/>
+			</div>
+			<div class = "hiddenAnalysisButton">
+				<input type = "button" value = "See Analysis" class = "Analysis"/>
+			</div>
+		</div>
+		</div>
+		
+		
+		<div class = "hiddenFoodDescription" id = "dinner">
+		<div class = "breakfastContainer">
+			<div class = "breakImage">
+				<img src = "dinner.png" height = "100" width = "150" />
+			</div>
+			<div class = "breakfastHeading">
+				<h2 class = "breakfastHeader">Dinner</h2>
+			</div>
+			<div class = "breakfastClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeDinner()"/>
+			</div>
+		</div>
+		<div class = "eatContainer">
+			<h2 class  = "eatContainerHeader">What you ate:</h2>
+		</div>
+		<div class = "textFieldEat">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "drinkContainer">
+			<h2 class  = "eatContainerHeader">What you drank:</h2>
+		</div>
+		<div class = "textFieldDrink">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "hiddenButtonContainer">
+			<div class = "hiddenSubmitButton">
+				<input type = "button" value = "Submit Data" class = "submitData"/>
+			</div>
+			<div class = "hiddenAnalysisButton">
+				<input type = "button" value = "See Analysis" class = "Analysis"/>
+			</div>
+		</div>
+		</div>
+		
+		
+		<div class = "hiddenFoodDescription" id = "snacks">
+		<div class = "breakfastContainer">
+			<div class = "breakImage">
+				<img src = "snack.png" height = "100" width = "150" />
+			</div>
+			<div class = "breakfastHeading">
+				<h2 class = "breakfastHeader">Snacks</h2>
+			</div>
+			<div class = "breakfastClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeSnacks()"/>
+			</div>
+		</div>
+		<div class = "eatContainer">
+			<h2 class  = "eatContainerHeader">What you ate:</h2>
+		</div>
+		<div class = "textFieldEat">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "drinkContainer">
+			<h2 class  = "eatContainerHeader">What you drank:</h2>
+		</div>
+		<div class = "textFieldDrink">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "hiddenButtonContainer">
+			<div class = "hiddenSubmitButton">
+				<input type = "button" value = "Submit Data" class = "submitData"/>
+			</div>
+			<div class = "hiddenAnalysisButton">
+				<input type = "button" value = "See Analysis" class = "Analysis"/>
+			</div>
+		</div>
+		</div>
+		
+		
+		<div class = "hiddenFoodDescription" id = "others">
+		<div class = "breakfastContainer">
+			<div class = "breakImage">
+				<img src = "others.png" height = "100" width = "150" />
+			</div>
+			<div class = "breakfastHeading">
+				<h2 class = "breakfastHeader">Others</h2>
+			</div>
+			<div class = "breakfastClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeOthers()"/>
+			</div>
+		</div>
+		<div class = "eatContainer">
+			<h2 class  = "eatContainerHeader">What you ate:</h2>
+		</div>
+		<div class = "textFieldEat">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in grams" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you ate" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "drinkContainer">
+			<h2 class  = "eatContainerHeader">What you drank:</h2>
+		</div>
+		<div class = "textFieldDrink">
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+			<div class = "textFieldType1">
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Enter Quantity in ml" class = "fieldDesign" />
+				</div>
+				<div class = "textFieldType2">
+					<input type = "text" placeholder = "Name Of Item you drank" class = "fieldDesign" />
+				</div>
+			</div>
+		</div>
+		<div class = "hiddenButtonContainer">
+			<div class = "hiddenSubmitButton">
+				<input type = "button" value = "Submit Data" class = "submitData"/>
+			</div>
+			<div class = "hiddenAnalysisButton">
+				<input type = "button" value = "See Analysis" class = "Analysis"/>
+			</div>
+		</div>
+		</div>
+		
+		
+			
+				
+	
+	</body>
+</html>

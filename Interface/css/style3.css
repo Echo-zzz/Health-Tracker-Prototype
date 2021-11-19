@@ -1,0 +1,454 @@
+body{
+	margin:0;
+	margin:auto;
+}
+.maincontainer{
+	width : 100 %;
+	height:100px;
+	background-color:white;
+}
+.innercontainer{
+	width:1200px;
+	height:100px;
+	background-color:white;
+	margin:auto;
+}
+.arrow{
+	height:100px;
+	width:100px;
+	float:left;
+	background-color:white;
+	
+}
+.heading{
+	font-size:50px;
+	font-family:italic;
+	letter-spacing:1px;
+	font-weight:bold;
+	margin-left:450px;
+	font-weight:400;
+	
+		
+}
+.button{
+	height:70px;
+	width:100px;
+	font-size: 50px;
+	font-family:bold;
+	font-weight:400;
+	background-color:white;
+	color:green;
+	border-radius: 35px;
+
+	margin-left:18px;
+	
+}
+.button:hover{
+	box-shadow: 0px 0px 30px orange;
+	background-color:blue;
+	color:white;
+}
+.maincontainer2{
+	width : 100 %;
+	height:500px;
+	background-color:white;
+}
+.innercontainer2{
+	width:1200px;
+	height:500px;
+	background-color:white;
+	margin:auto;
+}
+.diet{
+	height: 500px;
+	width:150px;
+	float:left;
+	
+}
+.main{
+	float:left;
+	height: 500px;
+	width:900px;
+	background-color:white;
+
+}
+.sleep{
+	float:left;
+	height: 500px;
+	width:150px;
+	
+}
+
+.text{
+	font-size:90px;
+	text-transform:rotate(-90deg);
+}
+.button1{
+	width:500px;
+	height:150px;
+	margin-left:-175px;
+	margin-top:175px;
+	transform:rotate(90deg);
+	font-size:100px;'
+	display: inline-block;
+	background-color:white;
+	border-radius: 35px;
+
+	
+	
+}
+.data{
+	height:450px;
+	width:700px;
+	margin:auto;
+	background-color:indigo;
+	border: 5px solid black;
+	border-radius: 5px;
+	
+}
+.heading2{
+	font-size:30px;
+	text-align:center;
+	
+}
+.block2{
+	float:left;
+	height:100px;
+	width:100px;
+	background-color:red;
+}
+.block2connected{
+	float:left;
+	height:100px;
+	width:600px;
+	background-color:white;
+}
+.graphs{
+	height:300px;
+	width:700px;
+	background-color:brown;
+}
+.piecharts{
+	height:200px;
+	width:350px;
+	background-color:yellow;
+	float:left;
+	
+}
+.chart1{
+	height:100px;
+	width:350px;
+	background-color:white;
+}
+.chart2{
+	height:100px;
+	width:350px;
+	background-color:white;
+}
+.exercisepage{
+	height:200px;
+	width:350px;
+	background-color:white;
+	float:left;
+}
+.statement{
+	height:90px;
+	width:700px;
+	background-color:white;
+}
+.detail{
+	height:60px;
+	width:700px;
+	background-color:white;
+}
+.head{
+	font-size: 50px;
+	margin-left:55px;
+	margin-top:30px;
+}
+.moreDetail{
+	float:right;
+	height:60px;
+	width:150px;
+	font-size:20px;
+	background-color:white;
+	color:green;
+}
+.h1{
+	margin-left:18px;
+	font-family:italic;
+	font-size:100px;
+	font-weight:100;
+	color:pink;
+	text-shadow: -2px -2px black, 2px -2px black, -2px 2px  black, 2px 2px  black;
+}
+	
+.button1:hover{
+	background-color:orange;
+	box-shadow: 0px 0px 15px blue;
+}
+.exerciseImage{
+	border: 3px solid black;
+	border-radius: 6px;
+}
+.chartImage{
+	height:100px;
+	width:100px;
+	float:left;
+}
+.chartHeading{
+	height: 100px;
+	width:150px;
+	float:left;
+}
+.chartStatement{
+	font-size:18px;
+	padding-top:10px;
+	font-weight:400;
+	padding-left: 12px;
+}
+.line{
+	height:100px;
+	width:700px;
+	background-color:orange;
+}
+.meals{
+	height:350px;
+	width:700px;
+	background-color:green;
+}
+
+.personPhoto{
+	height:350px;
+	width:350px;
+	background-color:white;
+	float:left;
+}
+.mealDetails{
+	height:350px;
+	width:350px;
+	background-color:brown;
+	float:left;
+}
+.line1{
+	height:100px;
+	width:350px;
+	background-color:white;
+	float:left;
+}
+.line2{
+	height:100px;
+	width:350px;
+	background-color:white;
+	float:left;
+}
+.cal{
+	text-align:left;
+	font-weight:400;
+	font-size:35px;
+}
+.today{
+	text-align:center;
+	font-weight:400;
+	font-size:35px;
+}
+.detailMeal{
+	height:70px;
+	width:350px;
+	background-color:orange;
+}
+.mealImage{
+	height:70px;
+	width:100px;
+	background-color:white;
+	float:left;
+}
+.mealLine{
+	height:70px;
+	width:200px;
+	background-color:white;
+	float:left;
+	font-family:arial;
+}
+.mealButton{
+	height:70px;
+	width:50px;
+	background-color:white;
+	float:left;
+	text-align:center;
+}
+.mealHead{
+	text-align:center;
+	font-weight:400;
+}
+.plus{
+	height:30px;
+	width:30px;	
+	margin-top:22px;
+	border-radius:45px;
+	text-align:center;
+	color:white;
+	font-weight:400;
+	border:2px solid black;
+	background-color:green;
+	box-shadow: 0px 0px 20px red;
+}
+.plus:hover{
+	background-color:black;
+	color:white;
+	
+}
+.prof{
+	width:250px;
+	height:200px;
+	background-color:white;
+}
+.subMenu{
+	width:250px;
+	height:100px;
+	background-color:white;
+	border-bottom: 2px solid black;
+	margin-top:-19px;
+}
+.subMenuHeading{
+	
+	width:250px;
+	height:100px;
+	background-color:white;
+	border: 1px solid black;
+	font-size:30px;
+	font-weight:400;
+	border-radius:13px;
+	
+}
+
+.close{
+	height: 50px;
+	width:250px;
+	background-color:white;
+}
+.closeBut{
+	float:right;
+	height:50px;
+	width:50px;
+	background-color:white;
+	font-weight:400;
+	font-size:30px;
+	border-radius:10px;
+	background-color:red;
+	color:white;
+}
+.breakfastContainer{
+	height:100px;
+	width:500px;
+	background-color:green;
+}
+.breakImage{
+	height:100px;
+	width:150px;
+	background-color:white;
+	float:left;
+}
+.breakfastHeading{
+	height:100px;
+	width:250px;
+	background-color:white;
+	float:left;
+}
+.breakfastClose{
+	height:100px;
+	width:100px;
+	background-color:white;
+	float:left;
+}
+.breakfastHeader{
+	font-family:arial;
+	font-weight:400;
+	font-size:35px;
+	text-align:center;
+}
+.eatContainer{
+	height:100px;
+	width:500px;
+	background-color:white;
+	margin-top:-21px;
+}
+.eatContainerHeader{
+	text-align:left;
+	font-family:arial;
+	font-weight:400;
+	font-size:25px;
+	padding-top:40px;
+}
+.textFieldEat{
+	height:150px;
+	width:500px;
+	background-color:blue;
+}
+.drinkContainer{
+	height:100px;
+	width:500px;
+	background-color:white;
+	margin-top:-21px;
+}
+.textFieldDrink{
+	height:150px;
+	width:500px;
+	background-color:blue;
+	
+}
+.textFieldType1{
+	height:75px;
+	width:500px;
+	background-color:brown;
+}
+.textFieldType2{
+	height:75px;
+	width:250px;
+	background-color:yellow;
+	float:left;
+}
+.fieldDesign{
+	height:20px;
+	width:200px;
+	margin-top:20px;
+	margin-left:15px;
+	border-radius:14px;
+}
+.hiddenButtonContainer{
+	height:100px;
+	width:500px;
+	background-color:blue;
+}
+.hiddenSubmitButton{
+	height:100px;
+	width:250px;
+	background-color:white;
+	float:left;
+}
+.hiddenAnalysisButton{
+	height:100px;
+	width:250px;
+	background-color:white;
+	float:left;
+}
+.submitData{
+	height:50px;
+	width:150px;
+	margin-top:20px;
+	margin-left:45px;
+	border-radius:14px;
+	font-size:20px;
+	background-color:purple;
+	color:white;
+}
+.Analysis{
+	height:50px;
+	width:150px;
+	margin-top:20px;
+	margin-left:45px;
+	border-radius:14px;
+	font-size:20px;
+	background-color:green;
+	color:white;
+}

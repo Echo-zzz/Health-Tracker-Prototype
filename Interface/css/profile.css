@@ -1,0 +1,95 @@
+body{
+	margin:0;
+	margin:auto;
+}
+.maincontainer{
+	width:100%;
+	background-color:white;
+	
+}
+.innercontainer{
+	height:735px;
+	width:1000px;
+	background-color:pink;
+	margin:auto;
+	border: 5px solid black;
+	
+}
+.profileHeading{
+	width:1000px;
+	height:100px;
+	background-color:green;
+}
+.profileIcon{
+	width:1000px;
+	height:300px;
+	background-color:white;
+}
+.description{
+	width:1000px;
+	height:335px;
+	background-color:blue;
+}
+.heading{
+	width:900px;
+	height:100px;
+	background-color:white;
+	float:left;
+}
+.closeButton{
+	width:100px;
+	height:100px;
+	background-color:white;
+	float:left;
+	
+}
+.text{
+	text-align:center;
+	font-weight:400;
+	font-size:50px;
+	font-family:arial;
+}
+.close{
+	height:50px;
+	width:50px;
+	margin:20px;
+	margin-left:25px;
+	background-color:red;
+	color:white;
+	border-radius:15px;
+}
+.close:hover{
+	border: 10px solid black;
+}
+.icon{
+	height:300px;
+	width:400px;
+	background-color:white;
+	margin-left:250px;
+	
+}
+.textField{
+	height:55.8px;
+	width:1000px;
+	background-color:white;
+}
+.editField{
+	height:50px;
+	width:300px;
+	margin-left: 312px;
+	border-radius:30px;
+	margin-top:3px;
+}
+.upload{
+	height:20px;
+	width:300px;
+	margin-left:60px;
+	border-radius:30px;
+}
+.sub{
+	height:30px;
+	width:100px;
+	margin-left:60px;
+	border-radius:30px;
+	
+}

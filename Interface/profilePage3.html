@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<style>
+	.formPopup {
+		   height:100px;
+		   width:250px;
+           position:fixed;
+		   margin-left:13px;
+		   margin-top:-38px;
+		   background-color:white;
+		   display:none;
+		
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        z-index: 9;
+      }
+	  .profile{
+		text-align:center;
+		font-size:30px;
+		font-weight:400;
+		font-family:arial;
+	  }
+		</style>
+		<script>
+			  function showRemark() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/profile.css"/>
+	</head>
+	<body>
+		<div class = "maincontainer">
+			<div class = "innercontainer">
+				<div class = "profileHeading">
+					<div class = "heading">
+						<h1 class ="text">PROFILE</h1>
+					</div>
+					<div class = "closeButton" >
+						<a href = "index3.html" style = "text-decoration:null;color:black"><input type = "button" value = "X" class = "close"/></a>
+					</div>
+				</div>
+				<div class = "profileIcon">
+						
+					<div class = "icon">
+						<img src = "pic.png" height = "270" width = "400">
+						<input type = "button" value = "Upload" class = "upload"/>
+					</div>
+					
+				</div>
+				<div class = "description">
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Name"/>
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Age"/>
+					</div>
+					<div class = "textField">
+					 <input class = "editField" type = "text" placeholder = "Enter Height"/>
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Weight"/>
+					</div>
+					
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Fat Percentage"/>
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Phone Number"/>
+						<input type = "button" value = "Submit" class = "sub" onclick = "showRemark()"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <div action="/action_page.php" class="formContainer">
+			<div class = "reaction">
+				<h2 class= "profile">PROFILE CREATED!</h2>
+			</div>
+        </div>
+      </div>
+    </div>
+	</body>
+	
+</html>
