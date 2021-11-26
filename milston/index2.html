@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+	.formPopup {
+		   height:100%;
+		   width:250px;
+           position:fixed;
+		   display:none;
+		   margin-left:-423px;
+		   margin-top:-73px;
+		   background-color:white;
+		
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+      }
+	  .hiddenAnalysis{
+		   height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   background-color:white;
+		   border: 2px solid black;
+		   border-radius:5px;
+			display:none;
+			left: 45%;
+			top: 5%;
+      }
+	  .hiddenPerformance{
+		   height:700px;
+		   width:500px;
+           position:fixed;
+		   margin-left:-190px;
+		   margin-top:-3px;
+		   background-color:white;
+		   border: 2px solid black;
+		   border-radius:5px;
+			left: 45%;
+			top: 5%;
+			display:none;
+      }
+		</style>
+		<script>
+	  function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+	   function openOrb() {
+        document.getElementById("orb").style.display = "block";
+      }
+      function closeOrb() {
+        document.getElementById("orb").style.display = "none";
+      }
+	  function openDays() {
+        document.getElementById("days").style.display = "block";
+      }
+      function closeDays() {
+        document.getElementById("days").style.display = "none";
+      }
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/style2.css"/>
+		
+	</head>
+	<body>
+		<div class= "maincontainer">
+			<div class = "innercontainer">
+				<div class = "arrow">
+					<input type = "button" value = "☰" class = "button" onclick = "openForm()"/>
+				</div>
+				<div class = "heading">
+					<h1 class = "h1" > SLEEP </h1>
+				</div>	
+			</div>
+		</div>
+		<div class = "maincontainer2">
+			<div class = "innercontainer2">
+				<div class = "diet">
+					<button class = "button1" ><span class = "text" onclick = "openDietForm()"><a style = "text-decoration:none;color:black"href = "index.html">EXERCISE</a></span></button>
+				</div>
+				<div class ="main">
+					<div class = "data" id = "br1">
+						<div class = "sleepGraph">
+							<div class = "graphImage">
+								<img src = "graph.png" height = "225" width = "450"/>
+							</div>
+							<input type = "button" class = "week"onclick = "openDays()"value = "View Recent Performance" style = "float:right;margin-top:-40px;border-radius:10px;background-color:black;color:white;font-size:10px;"/>
+						</div>
+						<div class = "sleepOrb" onclick = "openOrb()">
+						   <div class = "orbImage">
+						      <img src = "orb.jpg" height = "225" width = "300" class= "hoverProb"/>
+						   </div>
+						</div>
+					</div>
+				</div>
+				<div class = "sleep">
+					<button class = "button1" onclick = "openForm()"><span class = "text"><a style = "text-decoration:none;color:black"href = "index3.html">DIET</a></span></button>
+				</div>
+				</div>
+					<div class = "pageRef">
+					<a href = "index.html"><input type = "button" value = "←" class = "refButton"/></a>
+					<a href = "index3.html"><input type = "button" value = "→" class = "refButton2"/></a>
+					</div>
+				</div>
+				 <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <div action="/action_page.php" class="formContainer">
+			<div class = "prof">
+				<div class = "close">
+				 <input type = "button" value = "X"class = "closeBut" onclick = "closeForm()"/>
+				</div>
+				<div class = "profilePic">
+					<img src = "createProfile.png" height = "130" width = "150" hspace = "45">
+				</div>
+			</div>
+			<div class = "subMenu">
+				<a href = "profilePage2.html" style = "text-decoration:null;color:black"><input type = "button" value = "Profile"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "setGoals2.html"><input type = "button" value = "Goals"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "setting2.html"><input type = "button" value = "Setting"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "instructors2.html"><input type = "button" value = "Find Instructors"class = "subMenuHeading"/></a>
+			</div>
+			<div class = "subMenu">
+				<a href = "contact2.html"><input type = "button" value = "Contact Us"class = "subMenuHeading"/></a>
+			</div>
+        </div>
+      </div>
+    </div>
+	<div class = "hiddenAnalysis" id = "orb">
+		<div class = "analysisHeading">
+			<div class = "analysisHeader">
+				<h2 class = "analysisHead">Analysis Of Sleep</h2>
+			</div>
+			<div class = "analysisClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeOrb()"/>
+			</div>
+		</div>
+		<div class = "hiddenOrb">
+			<img src = "orb.jpg" height = "300" width = "300" hspace = "90"/>
+		</div>
+		<div class = "analysisDescription">
+			<p class = "analysisStatements">
+				Your Sleeping Quality
+				is good.<br><br>
+				You should better sleep
+				earlier.<br><br>
+				These things could help
+				To have a better sleep:<br>
+				1.Sleep by 8pm<br>
+				2.Take 8hr sleep<br>
+				3.Switch Off Mobile Phone While Sleeping<br>
+				
+				
+			</p>
+		</div>
+	</div>
+	<div class = "hiddenPerformance" id = "days">
+		<div class = "performanceHeading">
+			<div class = "performanceHeader">
+				<h2 class = "performanceh2">Performance of Last 4 Days</h2>
+			</div>
+			<div class = "performanceClose">
+				<input type = "button" value = "X" class = "closeBut" onclick = "closeDays()"/>
+			</div>
+		</div>
+		<div class = "Hiddengraph">
+			<div class = "hiddenGraphImage">
+				<img src = "graph.png" height = "125" width = "250" hspace = "70"/>
+			</div>
+			<div class = "hiddenGraphDes">
+				<h2 class = "day" >Monday</h2>
+			</div>
+		</div>
+			<div class = "Hiddengraph">
+			<div class = "hiddenGraphImage">
+				<img src = "graph2.png" height = "125" width = "250" hspace = "70"/>
+			</div>
+			<div class = "hiddenGraphDes">
+				<h2 class = "day" >Tuesday</h2>
+			</div>
+			
+		</div>
+		<div class = "Hiddengraph">
+			<div class = "hiddenGraphImage">
+						<img src = "graph.png" height = "125" width = "250" hspace = "70"/>
+			</div>
+			<div class = "hiddenGraphDes">
+				<h2 class = "day" >Wednesday</h2>
+			</div>
+		</div>
+		<div class = "Hiddengraph">
+			<div class = "hiddenGraphImage">
+				<img src = "graph2.png" height = "125" width = "250" hspace = "70"/>
+			</div>
+			<div class = "hiddenGraphDes">
+				<h2 class = "day" >Thursday</h2>
+			</div>
+		</div>
+		
+	</div>	
+				
+	
+	</body>
+</html>

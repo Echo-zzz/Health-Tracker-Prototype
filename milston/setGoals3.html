@@ -1,0 +1,340 @@
+<html>
+<head>
+	<style>
+	.hiddenGoals{
+		   height:750px;
+		   width:1000px;
+		   margin-left:-423px;
+		   margin-top:-73px;
+		   background-color:white;
+			position:absolute;
+			display:none;
+        left: 77.85%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 2px solid black;
+        z-index: 9;
+      }
+	
+	</style>
+	<script>
+		 function openBody() {
+        document.getElementById("body").style.display = "block";
+      }
+      function closeBody() {
+        document.getElementById("body").style.display = "none";
+      }
+	   function openFit() {
+        document.getElementById("fit").style.display = "block";
+      }
+      function closeFit() {
+        document.getElementById("fit").style.display = "none";
+      }
+	   function openLoose() {
+        document.getElementById("loose").style.display = "block";
+      }
+      function closeLoose() {
+        document.getElementById("loose").style.display = "none";
+      }
+	   function openHealthy() {
+        document.getElementById("healthy").style.display = "block";
+      }
+      function closeHealthy() {
+        document.getElementById("healthy").style.display = "none";
+      }
+	  function display(){
+		alert("Plan A Applied");
+	  }
+	   function display2(){
+		alert("Plan B Applied");
+	  }
+	</script>
+	<link rel = "stylesheet" type = "text/css" href = "css/setGoals.css"/>
+</head>
+<body>
+	<div class = "maincontainer">
+		<div class = "innercontainer">
+			<div class = "setGoalsHeading">
+				<a href = "index3.html" style = "text-decoration:none;color:black"><input type = "button" value = "X"class = "close"/></a>
+				<h1 class= "heading">SET YOUR GOALS</h1>
+				
+			</div>
+			<div class = "goalsIcon">
+				<div class = "icon1" onclick = "openBody()">
+					<div class = "pic">
+						<img src = "body.jpg" height = "150" width ="250" hspace = "120"class = "hoverProb"/>
+					</div>
+					<div class = "subHeading">
+						<h2 class = "sub">BODY BUILDING</h2>
+					</div>
+				</div>
+				<div class = "icon2" onclick = "openFit()">
+					<div class = "pic">
+						<img src = "fitness.png" height = "150" width ="250" hspace = "120"class = "hoverProb"/>
+					</div>
+					<div class = "subHeading">
+						<h2 class = "sub">FITNESS</h2>
+					</div>
+				</div>
+			</div>
+			<div class = "goalsIcon2">
+				<div class = "icon1" onclick = "openLoose()">
+					<div class = "pic">
+						<img src = "loose.png" height = "150" width ="250" hspace = "120"class = "hoverProb"/>
+					</div>
+					<div class = "subHeading">
+						<h2 class = "sub">LOOSE WEIGHT</h2>
+					</div>
+				</div>
+				<div class = "icon2" onclick = "openHealthy()">
+					<div class = "pic">
+						<img src = "health.png" height = "150" width ="250" hspace = "120"class = "hoverProb"/>
+					</div>
+					<div class = "subHeading">
+						<h2 class = "sub">KEEP HEALTHY</h2>
+					</div>
+				</div>
+			</div>
+			<div class = "statement">
+				<h2 class = "heading2">WE WILL GIVE YOU DIFFERENT SUGGESTIONS ACCORDING TO YOUR GOALS</h2>
+			</div>
+		</div>
+	</div>
+	<div class = "hiddenGoals" id = "body">
+		<div class = "categoryImage">
+			<div class = "imageBox">
+				<img src = "body.jpg" height = "150" width = "250" hspace = "350">
+			</div>
+			<div class  = "exit">
+				<input type = "button" value = "X" class = "close" onclick = "closeBody()"/>
+			</div>
+		</div>
+			<div class = "plans">
+				<div class = "planA">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN A</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								100 Calories/day<br><br><br>
+								You should have:<br>
+								200protiens/day<br><br><br>
+								You should do:<br>
+								1) 4X20 Push Ups<br>
+								2) 30 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN A" class = "applybutton" onclick = "display()"/>
+							</div>
+					 </div>
+				</div>
+				<div class = "planB">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN B</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								50 Calories/day<br><br><br>
+								You should have:<br>
+								300protiens/day<br><br><br>
+								You should do:<br>
+								1) 6X20 Push Ups<br>
+								2) 15 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN B" class = "applybutton" onclick = "display2()"/>
+							</div>
+					 </div>
+				</div>
+			</div>
+			
+		</div>
+		<div class = "hiddenGoals" id = "fit">
+		<div class = "categoryImage">
+			<div class = "imageBox">
+				<img src = "fitness.png" height = "150" width = "250" hspace = "350">
+			</div>
+			<div class  = "exit">
+				<input type = "button" value = "X" class = "close" onclick = "closeFit()"/>
+			</div>
+		</div>
+			<div class = "plans">
+				<div class = "planA">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN A</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								100 Calories/day<br><br><br>
+								You should have:<br>
+								200protiens/day<br><br><br>
+								You should do:<br>
+								1) 4X20 Push Ups<br>
+								2) 30 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN A" class = "applybutton" onclick = "display()"/>
+							</div>
+					 </div>
+				</div>
+				<div class = "planB">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN B</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								50 Calories/day<br><br><br>
+								You should have:<br>
+								300protiens/day<br><br><br>
+								You should do:<br>
+								1) 6X20 Push Ups<br>
+								2) 15 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN B" class = "applybutton" onclick = "display2()" />
+							</div>
+					 </div>
+				</div>
+			</div>
+			
+		</div>
+		<div class = "hiddenGoals" id = "loose">
+		<div class = "categoryImage">
+			<div class = "imageBox">
+				<img src = "loose.png" height = "150" width = "250" hspace = "350">
+			</div>
+			<div class  = "exit">
+				<input type = "button" value = "X" class = "close" onclick = "closeLoose()"/>
+			</div>
+		</div>
+			<div class = "plans">
+				<div class = "planA">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN A</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								100 Calories/day<br><br><br>
+								You should have:<br>
+								200protiens/day<br><br><br>
+								You should do:<br>
+								1) 4X20 Push Ups<br>
+								2) 30 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN A" class = "applybutton" onclick = "display()"/>
+							</div>
+					 </div>
+				</div>
+				<div class = "planB">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN B</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								50 Calories/day<br><br><br>
+								You should have:<br>
+								300protiens/day<br><br><br>
+								You should do:<br>
+								1) 6X20 Push Ups<br>
+								2) 15 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN B" class = "applybutton"onclick = "display2()" />
+							</div>
+					 </div>
+				</div>
+			</div>
+			
+		</div>
+		<div class = "hiddenGoals" id = "healthy">
+		<div class = "categoryImage">
+			<div class = "imageBox">
+				<img src = "health.png" height = "150" width = "250" hspace = "350">
+			</div>
+			<div class  = "exit">
+				<input type = "button" value = "X" class = "close" onclick = "closeHealthy()"/>
+			</div>
+		</div>
+			<div class = "plans">
+				<div class = "planA">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN A</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								100 Calories/day<br><br><br>
+								You should have:<br>
+								200protiens/day<br><br><br>
+								You should do:<br>
+								1) 4X20 Push Ups<br>
+								2) 30 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN A" class = "applybutton" onclick = "display()"/>
+							</div>
+					 </div>
+				</div>
+				<div class = "planB">
+					<div class = "Planheading">
+						<h5 class = "plansHeading">PLAN B</h5>
+					 </div>
+					 <div class = "planDescription">
+						<div class = "description">
+							<p class = "para">
+								You should consume:<br>
+								50 Calories/day<br><br><br>
+								You should have:<br>
+								300protiens/day<br><br><br>
+								You should do:<br>
+								1) 6X20 Push Ups<br>
+								2) 15 min climbing/day<br>
+							
+								
+							</p>
+						</div>
+							<div class = "apply">
+								<input type = "button" value = "APPLY PLAN B" class = "applybutton" onclick = "display2()"/>
+							</div>
+					 </div>
+				</div>
+			</div>
+			
+		</div>
+</body>
+</html>

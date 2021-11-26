@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<style>
+	.formPopup {
+		   height:100px;
+		   width:250px;
+           position:fixed;
+		   margin-left:13px;
+		   margin-top:-38px;
+		   background-color:white;
+		   display:none;
+		
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        z-index: 9;
+      }
+	  .profile{
+		text-align:center;
+		font-size:30px;
+		font-weight:400;
+		font-family:arial;
+	  }
+		</style>
+		<script>
+			  function showRemark() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+	  function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["fage"].value;
+  let z = document.forms["myForm"]["fheight"].value;
+  let a = document.forms["myForm"]["fweight"].value;
+  let b = document.forms["myForm"]["ffat"].value;
+  let c = document.forms["myForm"]["fnumber"].value;
+  if(x!= "" && y!= "" && z!= "" && a!= "" && b!= "" && c!= "" ){
+		alert("Profile Created");
+	}
+  }
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "css/profile.css"/>
+	</head>
+	<body>
+		<div class = "maincontainer">
+			<div class = "innercontainer">
+				<div class = "profileHeading">
+					<div class = "heading">
+						<h1 class ="text">PROFILE</h1>
+					</div>
+					<div class = "closeButton" >
+						<a href = "index3.html" style = "text-decoration:null;color:black"><input type = "button" value = "X" class = "close"/></a>
+					</div>
+				</div>
+				<div class = "profileIcon">
+						
+					<div class = "icon">
+						<img src = "pic.png" height = "270" width = "400">
+						<input type = "button" value = "Upload" class = "upload"/>
+					</div>
+					
+				</div>
+				<div class = "description">
+				<form name = "myForm" onsubmit = "return validateForm()" method = "post">
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Name" name = "fname"required />
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Age" name = "fage"required />
+					</div>
+					<div class = "textField">
+					 <input class = "editField" type = "text" placeholder = "Enter Height" name = "fheight"required />
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Weight" name = "fweight"required />
+					</div>
+					
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Fat Percentage" name = "ffat"required />
+					</div>
+					<div class = "textField">
+						<input class = "editField" type = "text" placeholder = "Enter Phone Number" name = "fnumber"required />
+						<input type = "submit" value = "Submit" class = "sub"/>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		 <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <div action="/action_page.php" class="formContainer">
+			<div class = "reaction">
+				<h2 class= "profile">PROFILE CREATED!</h2>
+			</div>
+        </div>
+      </div>
+    </div>
+	</body>
+	
+</html>
